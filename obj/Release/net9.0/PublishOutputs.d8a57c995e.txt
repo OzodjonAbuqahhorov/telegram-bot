@@ -1,0 +1,7 @@
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Release/net9.0/publish/samtexsocksbot
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Release/net9.0/publish/samtexsocksbot.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Release/net9.0/publish/samtexsocksbot.deps.json
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Release/net9.0/publish/samtexsocksbot.runtimeconfig.json
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Release/net9.0/publish/samtexsocksbot.pdb
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Release/net9.0/publish/Newtonsoft.Json.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Release/net9.0/publish/Telegram.Bot.dll
