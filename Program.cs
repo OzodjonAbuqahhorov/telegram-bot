@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 
 class Program
 {
-    static TelegramBotClient bot = new TelegramBotClient("8234831800:AAHOXsKFNUV9sIU6O7BWqySwYHs6yRiieq8");
+    static TelegramBotClient bot = new TelegramBotClient(Environment.GetEnvironmentVariable("8234831800:AAHOXsKFNUV9sIU6O7BWqySwYHs6yRiieq8"));
     static Dictionary<long, string> userLang = new();
     static Dictionary<long, string> userPhone = new();
 
