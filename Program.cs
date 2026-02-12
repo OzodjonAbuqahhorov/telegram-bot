@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,9 +11,24 @@ using System.Text.RegularExpressions;
 
 class Program
 {
-    static TelegramBotClient bot = new TelegramBotClient(Environment.GetEnvironmentVariable("8234831800:AAHOXsKFNUV9sIU6O7BWqySwYHs6yRiieq8"));
+    private static readonly TelegramBotClient bot;
     static Dictionary<long, string> userLang = new();
     static Dictionary<long, string> userPhone = new();
+
+    static Program()
+    {
+        // Read bot token from environment variable
+        const string tokenEnvVarName = "TELEGRAM_BOT_TOKEN";
+        var token = Environment.GetEnvironmentVariable(tokenEnvVarName);
+
+        if (string.IsNullOrWhiteSpace(token))
+        {
+            throw new InvalidOperationException(
+                $"Environment variable '{tokenEnvVarName}' is not set. Please set it to your Telegram bot token.");
+        }
+
+        bot = new TelegramBotClient(token);
+    }
 
     static async Task Main()
     {
