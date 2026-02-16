@@ -3,7 +3,7 @@ using Npgsql;
 public static class Database
 {
     static string conn =
-        Environment.GetEnvironmentVariable("DATABASE_URL");
+        Environment.GetEnvironmentVariable("DB_CONNECTION");
 
     public static async Task SaveUser(string username,string phone)
     {
