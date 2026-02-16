@@ -12,6 +12,7 @@ using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
+using Npgsql;
 
 class Program
 {
@@ -110,6 +111,21 @@ class Program
 
                 userPhone[chatId] = phone;
 
+                if (update.Message.Contact != null)
+                {
+                    var username = update.Message.From.Username;
+                    var phone = update.Message.Contact.PhoneNumber;
+
+                    await Database.SaveUser(username, phone);
+
+                    await bot.SendTextMessageAsync(update.Message.Chat.Id, "Raqamingiz saqlandi ✅");
+
+                    
+                    
+                }
+
+
+
                 var inlineKeyboard = new InlineKeyboardMarkup(new[]
                 {
                     InlineKeyboardButton.WithCallbackData("✅ Kanalga obuna bo‘ldim", "check_sub")
@@ -197,35 +213,6 @@ class Program
         return Task.CompletedTask;
     }
 
-    static async Task WriteToSheet(string userId, string name, string phone)
-    {
-        var json = Environment.GetEnvironmentVariable("GOOGLE_CREDENTIALS");
-
-        var credential = GoogleCredential
-        .FromJson(json)
-        .CreateScoped(SheetsService.Scope.Spreadsheets);
-
-        var service = new SheetsService(new BaseClientService.Initializer()
-        {
-            HttpClientInitializer = credential,
-            ApplicationName = "TelegramBot"
-        });
-
-        var range = "Sheet1!A:D";
-
-        var valueRange = new ValueRange()
-        {
-            Values = new List<IList<object>>
-            {
-                new List<object> { userId, name, phone, DateTime.Now.ToString() }
-            }
-        };
-
-        var appendRequest = service.Spreadsheets.Values.Append(valueRange,"1br6NU-Hz1jr6Ctl-EfREovx79a8CM3Et1On0bE3I_Qw",range);
-
-        appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
-
-        await appendRequest.ExecuteAsync();
-    }
+    
 
 }

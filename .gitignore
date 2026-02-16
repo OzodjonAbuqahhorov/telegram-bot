@@ -1,0 +1,17 @@
+# build files
+bin/
+obj/
+
+# user secrets
+credentials.json
+.env
+
+# system files
+.DS_Store
+Thumbs.db
+
+# vscode
+.vscode/
+
+# logs
+*.log

@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[1.72.0.3966, )"
             },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
             "Telegram.Bot": {
               "target": "Package",
               "version": "[19.0.0, )"
