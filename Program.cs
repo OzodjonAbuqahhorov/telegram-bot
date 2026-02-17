@@ -114,14 +114,11 @@ class Program
                 if (update.Message.Contact != null)
                 {
                     var username = update.Message.From.Username;
-                    var phone = update.Message.Contact.PhoneNumber;
+                    var phoneNumber = update.Message.Contact.PhoneNumber;
 
-                    await Database.SaveUser(username, phone);
+                    await Database.SaveUser(username, phoneNumber);
 
                     await bot.SendTextMessageAsync(update.Message.Chat.Id, "Raqamingiz saqlandi ✅");
-
-                    
-                    
                 }
 
 

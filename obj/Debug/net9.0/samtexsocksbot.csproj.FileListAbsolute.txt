@@ -16,3 +16,14 @@
 /Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Newtonsoft.Json.dll
 /Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Telegram.Bot.dll
 /Users/ozodjonabduqahhorov/Documents/samtexsocksbot/obj/Debug/net9.0/samtexso.99E02861.Up2Date
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/obj/Debug/net9.0/samtexsocksbot.sourcelink.json
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Google.Apis.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Google.Apis.Auth.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Google.Apis.Core.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Google.Apis.Sheets.v4.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/Npgsql.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/System.CodeDom.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/System.Management.dll
+/Users/ozodjonabduqahhorov/Documents/samtexsocksbot/bin/Debug/net9.0/runtimes/win/lib/net7.0/System.Management.dll
