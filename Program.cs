@@ -132,7 +132,7 @@ class Program
                 "Kanalga obuna bo‘ling va tasdiqlang:\n@samtexsockss",
                 replyMarkup: inlineKeyboard);
 
-                return;
+                
             }
 
         }
