@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("samtexsocksbot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+039da92501bfe1adb65c9f0bfcf6e6914967f533")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2652bf1ea7bdde962e4d59d6aa57651c4c946a9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("samtexsocksbot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("samtexsocksbot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

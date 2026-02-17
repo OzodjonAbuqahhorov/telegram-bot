@@ -108,17 +108,20 @@ class Program
                     await botClient.SendTextMessageAsync(chatId, "❌ Telefon raqam noto‘g‘ri formatda.");
                     return;
                 }
-
+                
                 userPhone[chatId] = phone;
 
                 if (update.Message.Contact != null)
                 {
                     var username = update.Message.From.Username;
-                    var phoneNumber = update.Message.Contact.PhoneNumber;
+                    var phone = update.Message.Contact.PhoneNumber;
 
-                    await Database.SaveUser(username, phoneNumber);
+                    await Database.SaveUser(username, phone);
 
                     await bot.SendTextMessageAsync(update.Message.Chat.Id, "Raqamingiz saqlandi ✅");
+
+                    return;
+                    
                 }
 
 
@@ -132,7 +135,7 @@ class Program
                 "Kanalga obuna bo‘ling va tasdiqlang:\n@samtexsockss",
                 replyMarkup: inlineKeyboard);
 
-                
+                return;
             }
 
         }
